@@ -168,12 +168,13 @@ a {
 
 .icon-container {
   background-color: #f3f9fa;
-  width: 65px;
+  width: 150px;
   height: 65px;
   border-radius: 100px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  margin: 1.5rem;
 }
 /* -------------------Buttons------------------------ */
 .btn {
@@ -239,6 +240,66 @@ a {
 
 @media screen and (min-width: 1024px) {
   .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* ----------------------Inputs------------------------- */
+.input {
+  border-radius: 40px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 2rem;
+  display: inline-block;
+  font-weight: 600;
+  outline: 0;
+  padding: 1.5 3.5rem;
+}
+
+/* ---------------------Input Groups-------------------- */
+.input-group {
+  border-radius: 40px;
+  border: 1px solid #ccc;
+  /* flex container */
+  display: flex;
+  margin: 2rem;
+  box-shadow: 0 0 30px #ccc;
+  /* items horizontal justification */
+  justify-content: space-between;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 0;
+}
+
+.input-group .input::after {
+  content: url(../components/icons.html);
+}
+
+.input-group .btn {
+  margin: 4px;
+  flex-grow: 1;
+}
+
+.input-group .icon-container {
+  background: none;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
     font-size: 1.5rem;
   }
 }
