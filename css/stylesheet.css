@@ -303,3 +303,30 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* --------------------------Cards-------------------------- */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px #ccc;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+.card__header {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+  background-color: var(--color-primary);
+}
+
+.card--secondary .card__header {
+  background-color: var(--color-secondary);
+}
+
+.card__body {
+  color: var(--color-heading);
+  padding: 2rem 3rem;
+}
