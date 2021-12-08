@@ -351,4 +351,18 @@ a {
   right: 5%;
 }
 
+/* -------------------------Media Components----------------------- */
+.media{
+  display: flex;
+  padding: 1rem;
+}
+
+.media__icon{
+  padding: 1rem;  
+}
+
+.media__title{
+  margin-top: 0;
+}
+
 
