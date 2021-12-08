@@ -115,7 +115,7 @@ a {
 }
 
 .badge--secondary {
-  background-color: var(--color-secondary);
+  background-color: var(--color-heading);
   color: #fff;
 }
 
@@ -306,9 +306,9 @@ a {
 
 /* --------------------------Cards-------------------------- */
 .card {
-  border-radius: 10px;
-  box-shadow: 0 0 20px 1px #ccc;
-  margin: 1rem;
+  border-radius: 50px;
+  box-shadow: 0 0 20px 10px rgb(36, 36, 36);
+  margin: 3rem;
   overflow: hidden;
 }
 
@@ -316,6 +316,7 @@ a {
   background-color: var(--color-primary);
   color: #fff;
   padding: 2rem 3rem;
+  box-shadow: 0 0 20px 5px black;
 }
 
 .card--primary .card__header {
@@ -329,4 +330,25 @@ a {
 .card__body {
   color: var(--color-heading);
   padding: 2rem 3rem;
+  }
+
+.card strong {
+  font-size: 5rem;
+  font-weight: bold;
 }
+
+/* -----------------------------Plans------------------------------ */
+.plan--popular .card__header {
+  position: relative;
+}
+
+.plan--popular .card__header::before {
+  content: url(../icons/popular.svg);
+  display: inline-block;
+  width: 55px;
+  position: absolute;
+  top: -10px;
+  right: 5%;
+}
+
+
