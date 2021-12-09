@@ -166,6 +166,10 @@ a {
   fill: var(--color-primary);
 }
 
+.icon--white {
+  fill: #fff;
+}
+
 .icon-container {
   background-color: #f3f9fa;
   width: 150px;
@@ -467,30 +471,70 @@ a {
 }
 
 /* -----------------------------Callouts------------------------------ */
-.callout{
+.callout {
   background-color: var(--color-secondary);
   border-radius: 20px;
   margin: 5px aut0;
   padding: 1rem 2rem;
 }
 
-.callout__content{
+.callout__content {
   color: #fff;
   text-align: center;
 }
 
-.callout__header{
+.callout__header {
   padding-left: 2rem;
-  margin:0;
+  margin: 0;
 }
 
-.callout__button{
-justify-self: center;
-align-self: center;
+.callout__button {
+  justify-self: center;
+  align-self: center;
 }
 
-@media screen and (min-width:768px){
-  .callout .grid--1x2{
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
   }
+}
+
+/* ----------------------collapsibles----------------------- */
+.collapsible {
+  background-color: var(--color-heading);
+}
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.collapsible__header-text {
+  margin: 0;
+  color: var(--color-secondary);
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: all 0.5s;
+}
+
+.collapsible__content {
+  background-color: var(--color-heading);
+  font-size: 2rem;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
 }
