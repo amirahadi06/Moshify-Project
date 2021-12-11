@@ -195,6 +195,13 @@ a {
   display: inline-block;
 }
 
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
 .btn--primary {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
@@ -635,7 +642,7 @@ a {
   padding-bottom: calc(var(--vertical-padding) + 4rem);
 }
 
-/* -------------------------Hero------------------------------ */
+/* -------------------------Hero Section------------------------------ */
 .hero {
 }
 
@@ -670,4 +677,29 @@ a {
     align-self: center;
   }
 }
+/* ------------------------Domain Badges---------------------- */
+.domain-section {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.domain__badges {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+}
 
+.domain__badges .badge {
+  justify-self: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .domain__badges {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+  /* place button text for bigger screens */
+  .domain__btn::after {
+    content: "search";
+  }
+}
