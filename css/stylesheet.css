@@ -318,9 +318,15 @@ a {
 /* --------------------------Cards-------------------------- */
 .card {
   border-radius: 50px;
-  box-shadow: 0 0 20px 10px rgb(36, 36, 36);
-  margin: 3rem;
+  box-shadow: 0 0 20px 10px rgb(124, 124, 124);
+  margin: 2rem;
   overflow: hidden;
+  transition: transform 0.3s ease-out;
+  max-width: 500px;
+}
+
+.card:hover {
+  transform: scale(1.05,1.05);
 }
 
 .card__header {
@@ -346,6 +352,16 @@ a {
 .card strong {
   font-size: 5rem;
   font-weight: bold;
+}
+
+@media screen and (min-width:1024px) {
+  .card--bigger {
+    transform: scale(1.1,1.1);
+  }
+  
+  .card--bigger:hover{
+    transform: scale(1.15,1.15);
+  }
 }
 
 /* -----------------------------Plans------------------------------ */
@@ -643,12 +659,6 @@ a {
 }
 
 /* -------------------------Hero Section------------------------------ */
-.hero {
-}
-
-.hero .container {
-}
-
 .hero__content {
   text-align: center;
   font-size: 2rem;
@@ -703,3 +713,9 @@ a {
     content: "search";
   }
 }
+
+/* -----------------------Plans-block------------------------- */
+.plans-block .plan{
+  margin: 2rem auto;
+}
+
