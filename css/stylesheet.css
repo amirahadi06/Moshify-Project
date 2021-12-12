@@ -172,7 +172,7 @@ a {
 
 .icon-container {
   background-color: #f3f9fa;
-  width: 150px;
+  width: 65px;
   height: 65px;
   border-radius: 100px;
   display: inline-flex;
@@ -326,7 +326,7 @@ a {
 }
 
 .card:hover {
-  transform: scale(1.05,1.05);
+  transform: scale(1.05, 1.05);
 }
 
 .card__header {
@@ -354,13 +354,13 @@ a {
   font-weight: bold;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .card--bigger {
-    transform: scale(1.1,1.1);
+    transform: scale(1.1, 1.1);
   }
-  
-  .card--bigger:hover{
-    transform: scale(1.15,1.15);
+
+  .card--bigger:hover {
+    transform: scale(1.15, 1.15);
   }
 }
 
@@ -633,6 +633,7 @@ a {
 
 .block__header {
   text-align: center;
+  margin-bottom: 5rem;
 }
 
 .block__heading {
@@ -715,7 +716,25 @@ a {
 }
 
 /* -----------------------Plans-block------------------------- */
-.plans-block .plan{
+.plans-block .plan {
   margin: 2rem auto;
 }
 
+/* ---------------------Feature-block------------------------- */
+.feature-block__container {
+  margin: 5rem auto;
+  gap: 4rem;
+}
+
+.feature-block__content h3 {
+  margin-top: 0;
+}
+.feature-block__Image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature-block__container:nth-of-type(even) .feature-block__content {
+    order: 2;
+  }
+}
