@@ -15,6 +15,10 @@
 }
 
 /* ------------------typography-------------------- */
+::selection {
+  background-color: var(--color-primary);
+  color: #fff;
+}
 html {
   /* set the font size 62.5% of default size (16px) = 10px = 1rem */
   font-size: 62.5%;
@@ -650,13 +654,13 @@ a {
 }
 
 .block--sckewed-right {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-  padding-bottom: calc(var(--vertical-padding) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+  padding-bottom: calc(var(--vertical-padding) + 8rem);
 }
 
 .block--sckewed-left {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
-  padding-bottom: calc(var(--vertical-padding) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
+  padding-bottom: calc(var(--vertical-padding) + 8rem);
 }
 
 /* -------------------------Hero Section------------------------------ */
@@ -737,4 +741,17 @@ a {
   .feature-block__container:nth-of-type(even) .feature-block__content {
     order: 2;
   }
+}
+
+/* ---------------------Showcase-block----------------------- */
+.showcase-block__image {
+  width: 100%;
+}
+
+.showcase-block__content .media__title {
+  color: #fff;
+}
+
+.showcase-block__content .media__body {
+  color: #ccc;
 }
