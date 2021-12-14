@@ -528,7 +528,6 @@ a {
 
 /* ----------------------collapsibles----------------------- */
 .collapsible {
-  background-color: var(--color-heading);
 }
 
 .collapsible__header {
@@ -540,7 +539,7 @@ a {
 
 .collapsible__header-text {
   margin: 0;
-  color: var(--color-secondary);
+  color: #fff;
 }
 
 .collapsible__chevron {
@@ -754,4 +753,82 @@ a {
 
 .showcase-block__content .media__body {
   color: #ccc;
+}
+/* ----------------------Footer-block----------------------- */
+.footer-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-block__category {
+  border-bottom: 1px solid rgb(73, 72, 72);
+  margin: 1rem 0;
+}
+
+.footer-block__category h3{
+font-size: 2rem;
+}
+
+.footer-block__item {
+  margin: 1rem 0;
+  padding-left: 3rem;
+}
+
+.footer-block__item a {
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-block__item:hover a {
+  color: #fff;
+}
+
+.footer-block__logo {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-block h3 {
+    font-size: 2rem;
+  }
+
+  .collapsible__content {
+    /* to make the collapsible__content (nav__list) always visible */
+    max-height: 100%;
+    opacity: 1;
+    border: 0;
+  }
+
+  .footer-block__category {
+    border: 0;
+  }
+
+  .footer-block__item {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    width: 150px;
+  }
+
+  .footer-block__logo {
+    order: -1;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .footer-block__logo img {
+    width: 100%;
+  }
+
+  .footer-block .collapsible__chevron {
+    display: none;
+  }
 }
