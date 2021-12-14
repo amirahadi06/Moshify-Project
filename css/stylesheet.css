@@ -443,6 +443,9 @@ a {
 }
 
 /* ----------------------Testimonials--------------------- */
+.testimonial-block {
+  padding-top: 5rem;
+}
 .testimonial {
   border-radius: 20px;
   box-shadow: 0 0 20px 10px rgb(36, 36, 36);
@@ -527,9 +530,6 @@ a {
 }
 
 /* ----------------------collapsibles----------------------- */
-.collapsible {
-}
-
 .collapsible__header {
   display: flex;
   justify-content: space-between;
@@ -663,6 +663,9 @@ a {
 }
 
 /* -------------------------Hero Section------------------------------ */
+.hero {
+  padding-top: 0;
+}
 .hero__content {
   text-align: center;
   font-size: 2rem;
@@ -678,6 +681,7 @@ a {
   font-weight: 700;
   line-height: 8.8rem;
   color: #fff;
+  margin-top: 0;
 }
 
 .hero__image {
@@ -765,8 +769,8 @@ a {
   margin: 1rem 0;
 }
 
-.footer-block__category h3{
-font-size: 2rem;
+.footer-block__category h3 {
+  font-size: 2rem;
 }
 
 .footer-block__item {
